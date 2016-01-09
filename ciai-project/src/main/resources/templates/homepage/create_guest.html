@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Sign Up as Guest Page</title>
+		<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<link href="../css/style.css" rel="stylesheet" />
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div th:include="fragments/header :: homepage"></div>
+		<div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><hr/></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/img_signup.png" class="center-block img-circle img-responsive" />
+                    </div>
+                    <div class="col-md-7">
+                        <h1 class="text-primary"></h1>
+                        <h1 class="text-primary">Sign Up as Guest<br/></h1>
+                        <p></p>				
+						<div th:include="forms/form_user :: sign_up(@{/sign_up_guest/})"></div>
+					    <p><a href="/sign_up_manager">Sign Up as Manager</a></p>
+					    <p><a href="/">Back</a></p>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><hr/></div>
+                </div>
+            </div>
+        </div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div th:include="fragments/footer :: homepage"></div>
+	</body>
+</html>

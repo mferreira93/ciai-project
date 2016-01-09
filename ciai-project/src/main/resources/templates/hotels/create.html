@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>Create New Hotel</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>    
+		<link href="../css/hotels.css" rel="stylesheet" />
+		<script src="../js/rooms.js"></script>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="../../../../css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div th:include="fragments/header :: manager"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>New Hotel</h1>
+				<div th:include="hotels/form :: hotelform(@{/hotels/})"></div>
+			    <p><a href="/hotels">Back</a></p>
+			</div>
+	    </div>
+	    <div th:include="fragments/header :: manager"></div>
+	</body>
+</html>

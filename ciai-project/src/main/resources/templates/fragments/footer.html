@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Footer Template file</title>
+	</head>
+	<body>
+		<div th:fragment="homepage">
+			<footer class="section section-primary"> 
+	            <div class="container"> 
+	                <div class="row"> 
+	                    <div class="col-sm-6"> 
+	                        <h1>Hotel Manager</h1> <p>CIAI 15/16 - DI - FCT/UNL&nbsp;</p>
+	                    </div>
+	                    <div class="col-sm-6"> 
+	                        <p class="text-info text-right"> <br/><br/></p>
+	                        <div class="row"> 
+	                        </div>
+	                        <div class="row"> 
+	                            <div class="col-md-12 hidden-xs text-right">
+	                                <ol class="list-unstyled link">
+	                                    <li><a href="/" class="white">Home</a></li>
+	                                    <li><a href="/list_hotels" class="white">Hotels</a></li>
+										<li><a href="/list_hostels" class="white">Hostels</a></li>
+	                                    <li th:if="${#httpServletRequest.remoteUser} == null"><a href="/login" class="white"><i class="fa fa-sign-in"></i> Login</a></li>
+	                                    <li th:if="${#httpServletRequest.remoteUser} == null"><a href="/sign_up_guest" class="white"><i class="fa fa-pencil-square-o"></i> Sign up</a></li>
+	                                </ol>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+		</div>
+		
+		<div th:fragment="moderator">
+			<footer class="section section-primary"> 
+	            <div class="container"> 
+	                <div class="row"> 
+	                    <div class="col-sm-6"> 
+	                        <h1>Hotel Manager</h1> <p>CIAI 15/16 - DI - FCT/UNL&nbsp;</p>
+	                    </div>
+	                    <div class="col-sm-6"> 
+	                        <p class="text-info text-right"> <br/><br/></p>
+	                        <div class="row"> 
+	                        </div>
+	                        <div class="row"> 
+	                            <div class="col-md-12 hidden-xs text-right">
+	                                <ol class="list-unstyled link">
+	                                    <li><a href="/comments" class="white">Comments Not Approved</a></li>
+	                                    <li><a href="/comments/hotels" class="white">List of Hotels</a></li>
+	                                </ol>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+		</div>
+		
+		<div th:fragment="guest">
+			<footer class="section section-primary"> 
+	            <div class="container"> 
+	                <div class="row"> 
+	                    <div class="col-sm-6"> 
+	                        <h1>Hotel Manager</h1> <p>CIAI 15/16 - DI - FCT/UNL&nbsp;</p>
+	                    </div>
+	                    <div class="col-sm-6"> 
+	                        <p class="text-info text-right"> <br/><br/></p>
+	                        <div class="row"> 
+	                        </div>
+	                        <div class="row"> 
+	                            <div class="col-md-12 hidden-xs text-right">
+	                                <ol class="list-unstyled link">
+	                                	<li><a href="/guests" class="white">List Bookings</a></li>
+										<li><a href="/guests/hotels" class="white">List Hotels</a></li>
+	                                </ol>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+		</div>
+		
+		<div th:fragment="manager">
+			<footer class="section section-primary"> 
+	            <div class="container"> 
+	                <div class="row"> 
+	                    <div class="col-sm-6"> 
+	                        <h1>Hotel Manager</h1> <p>CIAI 15/16 - DI - FCT/UNL&nbsp;</p>
+	                    </div>
+	                    <div class="col-sm-6"> 
+	                        <p class="text-info text-right"> <br/><br/></p>
+	                        <div class="row"> 
+	                        </div>
+	                        <div class="row"> 
+	                            <div class="col-md-12 hidden-xs text-right">
+	                                <ol class="list-unstyled link">
+	                                	<li><a href="/hotels" class="white">Hotels</a></li>
+										<li><a href="/hotels/comments" class="white">Comments</a></li>
+										<li><a href="/hotels/bookings" class="white"> Bookings</a></li>
+										<li><a href="/hotels/bookings_wait_list" class="white">Bookings Wait List</a></li>		
+	                                </ol>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+		</div>
+		
+		<div th:fragment="admin">
+			<footer class="section section-primary"> 
+	            <div class="container"> 
+	                <div class="row"> 
+	                    <div class="col-sm-6"> 
+	                        <h1>Hotel Manager</h1> <p>CIAI 15/16 - DI - FCT/UNL&nbsp;</p>
+	                    </div>
+	                    <div class="col-sm-6"> 
+	                        <p class="text-info text-right"> <br/><br/></p>
+	                        <div class="row"> 
+	                        </div>
+	                        <div class="row"> 
+	                            <div class="col-md-12 hidden-xs text-right">
+	                                <ol class="list-unstyled link">
+	                                	<li><a href="/users" class="white"> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard</a></li>
+										<li><a href="/users/managers" class="white">Hotel Managers</a></li>
+										<li><a href="/users/moderators" class="white">Comment Moderators</a></li>
+										<li><a href="/users/guests" class="white">Guests</a></li>
+	                                </ol>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+		</div>
+	</body>
+</html>

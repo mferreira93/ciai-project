@@ -1,0 +1,1086 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="855" gr:y="455" id="sv1#page1" name="Hotel Management">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page2">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page2#mdu1">
+                  <layout:Link link="sv1#page1#page2#mdu1#ln5"/>
+                  <layout:Attribute attribute="ent1#att2"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page2#dau1">
+                  <layout:Attribute attribute="ent1#att2"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page2#dau4"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page2#dau15"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page3">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page3#enu1">
+                  <layout:Field field="sv1#page1#page3#enu1#fld2"/>
+                  <layout:Field field="sv1#page1#page3#enu1#fld3"/>
+                  <layout:Link link="sv1#page1#page3#enu1#ln11"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page4">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page4#enu2">
+                  <layout:Link link="sv1#page1#page4#enu2#ln4"/>
+                  <layout:Field field="sv1#page1#page4#enu2#fld1"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page4#enu18">
+                  <layout:Link link="sv1#page1#page4#enu18#ln47"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page4#enu25">
+                  <layout:Link link="sv1#page1#page4#enu25#ln59"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page9">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page9#mdu3">
+                  <layout:Attribute attribute="ent1#att2"/>
+                  <layout:Link link="sv1#page1#page9#mdu3#ln9"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page9#dau3">
+                  <layout:Attribute attribute="ent1#att2"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page10">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page10#enu5">
+          <layout:Field field="sv1#page1#page10#enu5#fld7"/>
+          <layout:Link link="sv1#page1#page10#enu5#ln17"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page2#dau7"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page2#dau8"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page2#dau9"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page11">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page12">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page12#dau10"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page12#dau11">
+          <layout:Link link="sv1#page1#page12#dau11#ln35"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page13">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page13#mdu6">
+                  <layout:Attribute attribute="ent1#att2"/>
+                  <layout:Link link="sv1#page1#page13#mdu6#ln24"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page13#dau13">
+                  <layout:Attribute attribute="ent1#att2"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page6">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page6#enu3">
+                  <layout:Field field="sv1#page1#page6#enu3#fld4"/>
+                  <layout:Field field="sv1#page1#page6#enu3#fld5"/>
+                  <layout:Link link="sv1#page1#page6#enu3#ln8"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page14">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page12#dau5"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page15">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page15#dau6"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page15#dau2"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page17">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page17#enu23">
+                  <layout:Link link="sv1#page1#page17#enu23#ln57"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page1#page17#enu24">
+                  <layout:Link link="sv1#page1#page17#enu24#ln58"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page1#page7">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#page13#dau12">
+          <layout:Link link="sv1#page1#page13#dau12#ln29"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page gr:x="755" gr:y="200" id="sv1#page1#page2" name="Administrator Dashboard">
+    <ContentUnits>
+      <MultiDataUnit gr:x="0" gr:y="10" id="sv1#page1#page2#mdu1" name="List Hotels" entity="ent1" linkOrder="sv1#page1#page2#mdu1#ln5" displayAttributes="ent1#att2">
+        <Link id="sv1#page1#page2#mdu1#ln5" name="Show details" to="sv1#page1#page2#dau1" type="normal" validate="true">
+          <LinkParameter id="sv1#page1#page2#mdu1#ln5#par5" name="oid_KeyCondition2 [oid]" source="ent1#att1Array" target="sv1#page1#page2#dau1#su2#kcond2.ent1#att1"/>
+        </Link>
+        <SortAttribute attribute="ent1#att2" order="ascending"/>
+        <Link id="sv1#page1#page2#mdu1#ln60" name="Flow60" to="sv1#mfu4" automaticCoupling="true" type="transport" validate="true"/>
+      </MultiDataUnit>
+      <DataUnit gr:x="180" gr:y="5" id="sv1#page1#page2#dau1" name="Hotel Details" entity="ent1" displayAttributes="ent1#att2">
+        <Selector id="sv1#page1#page2#dau1#su2" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page2#dau1#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+      <DataUnit gr:x="320" gr:y="5" id="sv1#page1#page2#dau4" name="List Hotel Managers" entity="User">
+        <Selector id="sv1#page1#page2#dau4#su5" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page2#dau4#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page2#dau4#ln15" name="Flow15" to="sv1#page1#page2#dau7" automaticCoupling="true" type="transport" validate="true"/>
+        <Link id="sv1#page1#page2#dau4#ln16" name="Flow16" to="sv1#page1#page10#enu5" automaticCoupling="true" type="transport" validate="true"/>
+        <Link id="sv1#page1#page2#dau4#ln61" name="Flow61" to="sv1#mfu6" automaticCoupling="true" type="transport" validate="true"/>
+      </DataUnit>
+      <DataUnit id="sv1#page1#page2#dau7" name="Hotel Manager Details" gr:x="485" gr:y="5" entity="User">
+        <Selector id="sv1#page1#page2#dau7#su8" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page2#dau7#su8#kcond8" name="KeyCondition5" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+      <DataUnit id="sv1#page1#page2#dau8" name="List Comment Moderatorrs" gr:x="650" gr:y="0" entity="User">
+        <Selector id="sv1#page1#page2#dau8#su10" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page2#dau8#su10#kcond10" name="KeyCondition5" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page2#dau8#ln18" name="Flow15" to="sv1#page1#page2#dau9" type="transport" automaticCoupling="true" validate="true"/>
+      </DataUnit>
+      <DataUnit id="sv1#page1#page2#dau9" name="Comment Moderators Details" gr:x="865" gr:y="0" entity="User">
+        <Selector id="sv1#page1#page2#dau9#su11" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page2#dau9#su11#kcond11" name="KeyCondition5" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+      <DataUnit gr:x="910" gr:y="120" id="sv1#page1#page2#dau15" name="List Guests" entity="User">
+        <Selector id="sv1#page1#page2#dau15#su27" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page2#dau15#su27#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page2#dau15#ln62" name="Flow62" to="sv1#dlu8" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="-37,326,-100,-348"/>
+      </DataUnit>
+    </ContentUnits>
+  </Page>
+  <Page gr:x="2560" gr:y="45" id="sv1#page1#page3" name="Login">
+    <ContentUnits>
+      <EntryUnit gr:x="0" gr:y="0" id="sv1#page1#page3#enu1" name="Login" entity="User" fieldOrder="sv1#page1#page3#enu1#fld2 sv1#page1#page3#enu1#fld3" linkOrder="sv1#page1#page3#enu1#ln11">
+        <Field id="sv1#page1#page3#enu1#fld2" name="username" type="string" modifiable="true"/>
+        <Field id="sv1#page1#page3#enu1#fld3" name="password" type="password" modifiable="true"/>
+        <Link id="sv1#page1#page3#enu1#ln11" name="Flow11" to="sv1#cnu2" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page gr:x="0" gr:y="755" id="sv1#page1#page4" name="Manage A Hotel">
+    <ContentUnits>
+      <EntryUnit gr:x="110" gr:y="0" id="sv1#page1#page4#enu2" name="Update Hotel" entity="ent1" linkOrder="sv1#page1#page4#enu2#ln4">
+        <Link id="sv1#page1#page4#enu2#ln4" name="Submit" to="sv1#mfu1" type="normal" validate="true">
+          <LinkParameter id="sv1#page1#page4#enu2#ln4#par2" name="Hotel Object_Hotel Object" source="entityBean" target="sv1#mfu1.entityBeans"/>
+          <LinkParameter id="sv1#page1#page4#enu2#ln4#par3" name="Key [oid]_KeyCondition1 [oid]" source="key.ent1#att1" target="sv1#mfu1#su1#kcond1.ent1#att1"/>
+          <LinkParameter id="sv1#page1#page4#enu2#ln4#par4" name="name_name" source="sv1#page1#page4#enu2#fld1" target="sv1#mfu1.ent1#att2"/>
+        </Link>
+        <Field id="sv1#page1#page4#enu2#fld1" name="name" type="string" modifiable="true"/>
+      </EntryUnit>
+      <EntryUnit gr:x="210" gr:y="0" id="sv1#page1#page4#enu18" name="New Hotel Form" entity="ent1" linkOrder="sv1#page1#page4#enu18#ln47">
+        <Link id="sv1#page1#page4#enu18#ln47" name="Flow47" to="sv1#cru3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-168,181,102,-215"/>
+      </EntryUnit>
+      <EntryUnit gr:x="0" gr:y="0" id="sv1#page1#page4#enu25" name="Delete Hotel" entity="ent1" linkOrder="sv1#page1#page4#enu25#ln59">
+        <Link id="sv1#page1#page4#enu25#ln59" name="Flow59" to="sv1#dlu5" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page9" name="All Hotels (Non-Registered View)" gr:x="45" gr:y="325">
+    <ContentUnits>
+      <MultiDataUnit id="sv1#page1#page9#mdu3" name="List Hotels" linkOrder="sv1#page1#page9#mdu3#ln9" gr:x="0" gr:y="5" entity="ent1" displayAttributes="ent1#att2">
+        <Link id="sv1#page1#page9#mdu3#ln9" name="Show details" to="sv1#page1#page9#dau3" type="normal" validate="true">
+          <LinkParameter id="sv1#page1#page9#mdu3#ln9#par15" name="oid_KeyCondition2 [oid]" source="ent1#att1Array" target="sv1#page1#page9#dau3#su4#kcond4.ent1#att1"/>
+        </Link>
+        <SortAttribute attribute="ent1#att2" order="ascending"/>
+      </MultiDataUnit>
+      <DataUnit id="sv1#page1#page9#dau3" name="Hotel Details" gr:x="170" gr:y="0" entity="ent1" displayAttributes="ent1#att2">
+        <Selector id="sv1#page1#page9#dau3#su4" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page9#dau3#su4#kcond4" name="KeyCondition2" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page10" name="Manage the Hotel Managers" gr:x="795" gr:y="715">
+    <ContentUnits>
+      <EntryUnit id="sv1#page1#page10#enu5" name="Delete" gr:x="0" gr:y="0" entity="User" linkOrder="sv1#page1#page10#enu5#ln17">
+        <Field id="sv1#page1#page10#enu5#fld7" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page10#enu5#ln17" name="Flow17" to="sv1#dlu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-6,130,-26,-140"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page11" name="Manage Comment Moderators" gr:x="1155" gr:y="740">
+    <ContentUnits>
+      <EntryUnit id="sv1#page1#page11#enu6" name="Delete" gr:x="0" gr:y="0" entity="User" linkOrder="sv1#page1#page11#enu6#ln22">
+        <Field id="sv1#page1#page11#enu6#fld8" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page11#enu6#ln22" name="Flow22" to="sv1#dlu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="79,136,-111,-129"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page12" name="Comment Moderator Dashboard" gr:x="2020" gr:y="275">
+    <ContentUnits>
+      <DataUnit gr:x="50" gr:y="0" id="sv1#page1#page12#dau10" name="List all Hotels" entity="User">
+        <Selector id="sv1#page1#page12#dau10#su14" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page12#dau10#su14#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page12#dau10#ln36" name="Flow36" to="sv1#page1#page12#dau5" automaticCoupling="true" type="transport" validate="true"/>
+      </DataUnit>
+      <DataUnit id="sv1#page1#page12#dau11" name="List all Non-Approved Comments" gr:x="195" gr:y="0" entity="User" linkOrder="sv1#page1#page12#dau11#ln35">
+        <Selector id="sv1#page1#page12#dau11#su15" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page12#dau11#su15#kcond15" name="KeyCondition14" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page12#dau11#ln35" name="Flow35" to="sv1#page1#page14" automaticCoupling="true" type="normal" validate="true"/>
+      </DataUnit>
+      <DataUnit id="sv1#page1#page12#dau5" name="List Hotel Details  + Comments" gr:x="0" gr:y="115" entity="User">
+        <Selector id="sv1#page1#page12#dau5#su21" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page12#dau5#su21#kcond21" name="KeyCondition14" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page13" name="Hotel Manager Dashboard" gr:x="410" gr:y="345">
+    <ContentUnits>
+      <MultiDataUnit id="sv1#page1#page13#mdu6" name="List Hotels" linkOrder="sv1#page1#page13#mdu6#ln24" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att2">
+        <Link id="sv1#page1#page13#mdu6#ln24" name="Show details" to="sv1#page1#page13#dau13" type="normal" validate="true">
+          <LinkParameter id="sv1#page1#page13#mdu6#ln24#par17" name="oid_KeyCondition2 [oid]" source="ent1#att1Array" target="sv1#page1#page13#dau13#su18#kcond18.ent1#att1"/>
+        </Link>
+        <SortAttribute attribute="ent1#att2" order="ascending"/>
+        <Link id="sv1#page1#page13#mdu6#ln26" name="Flow26" to="sv1#page1#page4#enu2" automaticCoupling="true" type="transport" validate="true"/>
+        <Link id="sv1#page1#page13#mdu6#ln46" name="Flow46" to="sv1#page1#page4#enu18" automaticCoupling="true" type="transport" validate="true"/>
+      </MultiDataUnit>
+      <DataUnit id="sv1#page1#page13#dau13" name="Hotel Details" gr:x="135" gr:y="0" entity="ent1" displayAttributes="ent1#att2">
+        <Selector id="sv1#page1#page13#dau13#su18" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page13#dau13#su18#kcond18" name="KeyCondition2" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+      <DataUnit id="sv1#page1#page13#dau12" name="List all Bookings" gr:x="195" gr:y="180" entity="ent3" linkOrder="sv1#page1#page13#dau12#ln29">
+        <Selector id="sv1#page1#page13#dau12#su23" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page13#dau12#su23#kcond23" name="KeyCondition3" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page13#dau12#ln29" name="Flow29" to="sv1#page1#page7" automaticCoupling="true" type="normal" validate="true"/>
+      </DataUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page6" name="Sign Up" gr:x="2895" gr:y="0">
+    <ContentUnits>
+      <EntryUnit id="sv1#page1#page6#enu3" name="Sign Up" gr:x="0" gr:y="0" entity="User" fieldOrder="sv1#page1#page6#enu3#fld4 sv1#page1#page6#enu3#fld5" linkOrder="sv1#page1#page6#enu3#ln8">
+        <Field id="sv1#page1#page6#enu3#fld4" name="username" type="string" modifiable="true"/>
+        <Field id="sv1#page1#page6#enu3#fld5" name="password" type="password" modifiable="true"/>
+        <Link id="sv1#page1#page6#enu3#ln8" name="Flow8" to="sv1#cru2" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page14" name="Manage Comment Moderators" gr:x="2135" gr:y="705">
+    <ContentUnits>
+      <EntryUnit id="sv1#page1#page14#enu15" name="Disapprove Comment" gr:x="155" gr:y="0" entity="User" linkOrder="sv1#page1#page14#enu15#ln34">
+        <Field id="sv1#page1#page14#enu15#fld17" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page14#enu15#ln34" name="Flow34" to="sv1#dlu3" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+      <EntryUnit id="sv1#page1#page14#enu16" name="Approve Comment" gr:x="0" gr:y="0" entity="User" linkOrder="sv1#page1#page14#enu16#ln33">
+        <Field id="sv1#page1#page14#enu16#fld18" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page14#enu16#ln33" name="Flow33" to="sv1#mfu3" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page15" name="Guest Dashboard" gr:x="2630" gr:y="260">
+    <ContentUnits>
+      <DataUnit id="sv1#page1#page15#dau6" name="List all Hotels" gr:x="0" gr:y="5" entity="User">
+        <Selector id="sv1#page1#page15#dau6#su22" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page15#dau6#su22#kcond22" name="KeyCondition14" predicate="in" implied="false"/>
+        </Selector>
+      </DataUnit>
+      <DataUnit gr:x="140" gr:y="0" id="sv1#page1#page15#dau2" name="List all Bookings" entity="ent3">
+        <Selector id="sv1#page1#page15#dau2#su3" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="sv1#page1#page15#dau2#su3#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+        </Selector>
+        <Link id="sv1#page1#page15#dau2#ln28" name="Flow28" to="sv1#page1#page7#enu10" automaticCoupling="true" type="transport" validate="true"/>
+      </DataUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page17" name="Manage Rooms" gr:x="405" gr:y="760">
+    <ContentUnits>
+      <EntryUnit gr:x="125" gr:y="0" id="sv1#page1#page17#enu23" name="Delete Room" linkOrder="sv1#page1#page17#enu23#ln57">
+        <Link id="sv1#page1#page17#enu23#ln57" name="Flow57" to="sv1#dlu4" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+      <EntryUnit gr:x="0" gr:y="0" id="sv1#page1#page17#enu24" name="Create Room" linkOrder="sv1#page1#page17#enu24#ln58">
+        <Link id="sv1#page1#page17#enu24#ln58" name="Flow58" to="sv1#cru4" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+  <Page id="sv1#page1#page7" name="Manage Bookings" gr:x="2635" gr:y="595">
+    <ContentUnits>
+      <EntryUnit id="sv1#page1#page7#enu8" name="Disapprove Booking" gr:x="155" gr:y="110" entity="User" linkOrder="sv1#page1#page7#enu8#ln20">
+        <Field id="sv1#page1#page7#enu8#fld10" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page7#enu8#ln20" name="Flow20" to="sv1#dlu6" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+      <EntryUnit id="sv1#page1#page7#enu9" name="Approve Booking" gr:x="0" gr:y="110" entity="User" linkOrder="sv1#page1#page7#enu9#ln7">
+        <Field id="sv1#page1#page7#enu9#fld11" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page7#enu9#ln7" name="Flow7" to="sv1#mfu5" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+      <EntryUnit id="sv1#page1#page7#enu10" name="Create Booking" gr:x="95" gr:y="0" entity="User" linkOrder="sv1#page1#page7#enu10#ln23 sv1#page1#page7#enu10#ln25">
+        <Field id="sv1#page1#page7#enu10#fld12" name="name" type="string" modifiable="true"/>
+        <Link id="sv1#page1#page7#enu10#ln23" name="Flow23" to="sv1#page1#page7#enu9" automaticCoupling="true" type="normal" validate="true"/>
+        <Link id="sv1#page1#page7#enu10#ln25" name="Flow25" to="sv1#page1#page7#enu8" automaticCoupling="true" type="normal" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+</Page>

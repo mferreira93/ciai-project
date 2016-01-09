@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  	<head>
+    	<title>List of Hotels</title>
+ 	</head>
+	<body>
+		<div th:fragment="list_hotels">
+	        <div class="section"> 
+	            <div class="container">
+	            	<div th:if="${#httpServletRequest.isUserInRole('ROLE_ADMIN') == true}">
+	            		<h1>List of Manager <span th:text="${manager.name}"></span></h1>
+	            		<br/>
+	            	</div>
+				<div th:if="${#httpServletRequest.isUserInRole('ROLE_GUEST') == true}">
+					<h1>List of Hotels</h1>
+					<br />
+				</div>
+				<div style="text-align: center" th:if="${#httpServletRequest.isUserInRole('ROLE_MANAGER') == true}">
+					<h2></h2>
+					<br/>
+				</div>
+				<ul th:each="hotel : ${hotel}" id="results">
+	            		<li style="list-style-type: none;">
+			                <div class="row"> 
+			                    <div class="col-md-4"> 
+			                        <img src="https://ununsplash.imgix.net/photo-1415302199888-384f752645d0?w=1024&amp;q=50&amp;fm=jpg&amp;s=823bdcc1b7ad955f5180efd352561016" class="img-responsive img-rounded" /> 
+			                    </div>
+			                    <div class="col-md-8">			                    
+			                    	<div th:if="${#httpServletRequest.remoteUser} == null">
+			                    		<h1> <a th:text="${hotel.hotelType} + ' ' + ${hotel.name}"></a></h1>
+			                    	</div>
+			                    	<div th:if="${#httpServletRequest.isUserInRole('ROLE_MANAGER') == true}">
+			                    		<h1> <a th:text="${hotel.hotelType} + ' ' + ${hotel.name}" th:href="@{|/hotels/${hotel.id}|}"></a></h1>
+			                    	</div>
+			                    	<div th:if="${#httpServletRequest.isUserInRole('ROLE_MODERATOR') == true}">
+			                    		<h1> <a th:text="${hotel.hotelType} + ' ' + ${hotel.name}" th:href="@{|/comments/hotels/${hotel.id}|}"></a></h1>
+			                    	</div>
+			                    	<div th:if="${#httpServletRequest.isUserInRole('ROLE_ADMIN') == true}">
+					            		<h1> <a th:text="${hotel.hotelType} + ' ' + ${hotel.name}" th:href="@{|/users/managers/${hotel.manager.idUser}/hotels/${hotel.id}|}"></a></h1>
+					            	</div>
+					            	<div th:if="${#httpServletRequest.isUserInRole('ROLE_GUEST') == true}">
+					            		<h1> <a th:text="${hotel.hotelType} + ' ' + ${hotel.name}" th:href="@{|/guests/hotels/${hotel.id}|}"></a></h1>
+					            	</div>
+			                        <h3> <span th:text="${hotel.address}"></span> | <span class="star-rating" th:attr="data-score=${hotel.numStars}"></span> &nbsp;</h3> 
+			                    </div>
+			                </div>
+		                </li>
+	                	<li style="list-style-type: none;"></li>
+	               	</ul>
+	               	<div th:if="${#httpServletRequest.isUserInRole('ROLE_MANAGER') == true}" sec:authorize="${#authorization.expression(T(hotel.security.AllowedForHotelCreation).Condition)}">
+	            		<a class="btn btn-sm btn-default pull-right" href="/hotels/new">
+							<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Hotel
+						</a>
+	            	</div>
+					<div th:if="${#httpServletRequest.isUserInRole('ROLE_ADMIN') == true}" class="pull-right">
+						<a class="btn btn-sm btn-default" href="/users/managers"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back</a>
+					</div>
+	          	</div>
+	        </div>
+	        
+		    <script src="..../../../../../js/app.js"></script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>All Bookings</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="../../css/style.css" rel="stylesheet" />
+		<script src="../../js/table.js"></script>
+		<script src="../../js/disapproveButtons.js"></script>
+		<script src="../../js/approveButtons.js"></script>
+	</head>
+	<body>
+		<div th:include="fragments/header :: manager"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="table-responsive">
+					<div>
+						<h3>Waiting for Approval</h3>
+						<br/>
+					    <div id="notice" class="text-center bg-success"></div>
+					    <br/>
+						<table class="table">
+							<tr th:each="booking : ${bookingsWaiting}">
+				                <td th:text="${booking.user.name}"></td>
+				                <td th:text="${booking.hotel.hotelType} + ' ' +  ${booking.hotel.name}"></td>
+				                <td th:text="${booking.room.roomType}"></td>
+				                <td th:text="'Start: ' + ${booking.start}"></td>
+				                <td th:text="'End: ' + ${booking.end}"></td>
+				                <td>
+				                	<a class="btn btn-sm btn-success approveBooking" type="submit" th:attr="data-url=${booking.id}">
+				                		<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+				                	</a>
+				                </td>
+				                <td>
+				                	<a class="btn btn-sm btn-danger disapproveBooking" type="submit" th:attr="data-url=${booking.id}">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</a>
+				                </td>
+				            </tr>
+						</table>
+						<br/>
+						<table class="table">
+							<tr th:each="bookingEdit : ${bookingsEditWaiting}">
+				                <td th:text="${bookingEdit.user.name}"></td>
+				                <td th:text="${bookingEdit.hotel.hotelType} + ' ' +  ${bookingEdit.hotel.name}"></td>
+				                <td th:text="${bookingEdit.room.roomType}"></td>
+				                <td th:text="'Start: ' + ${bookingEdit.start}"></td>
+				                <td th:text="'End: ' + ${bookingEdit.end}"></td>
+				                <td>
+				                	<a class="btn btn-sm btn-primary" th:href="@{|/hotels/bookings_wait_list/${bookingEdit.id}|}">
+				                		<span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+				                	</a>
+			                	</td>
+				                <td>
+				                	<a class="btn btn-sm btn-success approveEditBooking" type="submit" th:attr="data-url=${bookingEdit.id}">
+				                		<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+				                	</a>
+				                </td>
+				                <td>
+				                	<a class="btn btn-sm btn-danger disapproveEditBooking" type="submit" th:attr="data-url=${bookingEdit.id}">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</a>
+				                </td>
+				            </tr>
+						</table>
+					</div>
+					<br />                      
+			    </div>
+			</div>
+		</div>
+		<div th:include="fragments/footer :: manager"></div>
+	</body>
+</html>

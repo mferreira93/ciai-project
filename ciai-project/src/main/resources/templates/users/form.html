@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>Handling Form Submission</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Hotel Form</h1>
+			<div th:fragment="singUpform(url)">
+				<form action="#" th:action="${url}" th:object="${user}" method="post">
+		    		<p><input type="hidden" th:field="*{idUser}" />Name:<input class="form-control" th:field="*{name}" type="text" /></p>
+		    		<p>Username:<input class="form-control" th:field="*{username}" type="text" /></p>
+		    		<p>Email:<input class="form-control" th:field="*{email}" type="email" /></p>
+		    		<p>Password:<input class="form-control" th:field="*{password}" type="password"/></p>
+		    	    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+			    </form>
+			</div>
+	    </div>
+	</body>
+</html>

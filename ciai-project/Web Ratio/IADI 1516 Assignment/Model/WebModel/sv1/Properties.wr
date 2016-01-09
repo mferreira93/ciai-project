@@ -1,0 +1,117 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Hotel Manager" homePage="sv1#page1">
+  <OperationUnits>
+    <ModifyUnit gr:x="970" gr:y="1690" id="sv1#mfu1" name="Update Hotel" entity="ent1">
+      <Selector id="sv1#mfu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#mfu1#kln2" name="KOFlow2" to="sv1#page1#page4#enu2" automaticCoupling="true" gr:bendpoints="-200,69,170,54"/>
+      <OKLink id="sv1#mfu1#oln15" name="OKFlow15" to="sv1#page1#page13#dau13" automaticCoupling="true" gr:bendpoints="228,-499,-182,277"/>
+    </ModifyUnit>
+    <DeleteUnit gr:x="1860" gr:y="1635" id="sv1#dlu1" name="Delete Hotel Manager" entity="User">
+      <Selector id="sv1#dlu1#su9" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu1#su9#kcond9" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#dlu1#kln4" name="KOFlow4" to="sv1#page1#page10#enu5" automaticCoupling="true"/>
+      <OKLink id="sv1#dlu1#oln7" name="OKFlow7" to="sv1#page1#page2#dau7" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit gr:x="2340" gr:y="1675" id="sv1#dlu2" name="Delete Comment Moderator" entity="User">
+      <Selector id="sv1#dlu2#su12" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu2#su12#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#dlu2#kln7" name="KOFlow7" to="sv1#page1#page11#enu6" automaticCoupling="true"/>
+      <OKLink id="sv1#dlu2#oln10" name="OKFlow10" to="sv1#page1#page2#dau8" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit gr:x="2060" gr:y="1675" id="sv1#mfu2" name="Approve Comment Moderator" entity="User">
+      <Selector id="sv1#mfu2#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu2#su13#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#mfu2#oln9" name="OKFlow9" to="sv1#page1#page2#dau8" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="2945" gr:y="1500" id="sv1#mfu3" name="Approve Comment">
+      <Selector id="sv1#mfu3#su17" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu3#su17#kcond17" name="KeyCondition17" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#mfu3#oln12" name="OKFlow12" to="sv1#page1#page12#dau11" automaticCoupling="true" gr:bendpoints="48,-454,-220,398"/>
+    </ModifyUnit>
+    <CreateUnit gr:x="2670" gr:y="325" id="sv1#cru2" name="Create User" entity="User" linkOrder="sv1#cru2#ln10">
+      <Link id="sv1#cru2#ln10" name="Flow10" to="sv1#spu1" automaticCoupling="true" type="transport" validate="true"/>
+      <KOLink id="sv1#cru2#kln12" name="KOFlow12" to="sv1#page1#page6#enu3" automaticCoupling="true" gr:bendpoints="50,107,34,-127"/>
+    </CreateUnit>
+    <StoredProcedureUnit gr:x="2740" gr:y="125" id="sv1#spu1" name="Create User in DB" resultType="plain">
+      <OKLink id="sv1#spu1#oln6" name="OKFlow6" to="sv1#cru2" automaticCoupling="true" gr:bendpoints="-43,65,-37,-75"/>
+      <KOLink id="sv1#spu1#kln8" name="KOFlow8" to="sv1#cru2" automaticCoupling="true" gr:bendpoints="41,61,47,-79"/>
+    </StoredProcedureUnit>
+    <StoredProcedureUnit gr:x="2225" gr:y="120" id="sv1#spu2" name="Check User Login Detais in DB  " resultType="plain">
+      <OKLink id="sv1#spu2#oln11" name="OKFlow11" to="sv1#cnu2" automaticCoupling="true" gr:bendpoints="-56,58,-52,-82"/>
+      <KOLink id="sv1#spu2#kln10" name="KOFlow10" to="sv1#cnu2" automaticCoupling="true" gr:bendpoints="48,55,52,-85"/>
+    </StoredProcedureUnit>
+    <ConnectUnit gr:x="2000" gr:y="285" id="sv1#cnu2" name="Login" relationship="Group2User" linkOrder="sv1#cnu2#ln43">
+      <SourceSelector id="sv1#cnu2#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#cnu2#su16#kcond16" name="KeyCondition16" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv1#cnu2#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#cnu2#su19#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
+      </TargetSelector>
+      <Link id="sv1#cnu2#ln12" name="Flow12" to="sv1#spu2" automaticCoupling="true" type="transport" validate="true"/>
+      <KOLink id="sv1#cnu2#kln11" name="KOFlow11" to="sv1#page1#page3" automaticCoupling="true" gr:bendpoints="88,108,14,-116"/>
+      <Link id="sv1#cnu2#ln13" name="Flow13" to="sv1#page1#page2" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#cnu2#ln38" name="Flow38" to="sv1#page1#page12" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#cnu2#ln39" name="Flow39" to="sv1#page1#page13" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="-1049,243,331,-348"/>
+      <Link id="sv1#cnu2#ln43" name="Flow43" to="sv1#page1#page15" automaticCoupling="true" type="transport" validate="true"/>
+    </ConnectUnit>
+    <DeleteUnit gr:x="3130" gr:y="1495" id="sv1#dlu3" name="Disapprove Comment">
+      <Selector id="sv1#dlu3#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu3#su20#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu3#oln13" name="OKFlow13" to="sv1#page1#page12#dau11" automaticCoupling="true" gr:bendpoints="306,-452,198,400"/>
+    </DeleteUnit>
+    <CreateUnit gr:x="840" gr:y="1690" id="sv1#cru3" name="Add new Hotel" entity="ent1">
+      <OKLink id="sv1#cru3#oln14" name="OKFlow14" to="sv1#page1#page13#mdu6" automaticCoupling="true" gr:bendpoints="41,-494,-353,282"/>
+      <KOLink id="sv1#cru3#kln13" name="KOFlow13" to="sv1#page1#page4#enu18" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="1300" gr:y="1685" id="sv1#dlu4" name="Delete Room" entity="ent2">
+      <Selector id="sv1#dlu4#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu4#su25#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu4#oln16" name="OKFlow16" to="sv1#page1#page13#dau13" automaticCoupling="true"/>
+    </DeleteUnit>
+    <CreateUnit gr:x="1150" gr:y="1700" id="sv1#cru4" name="Add new Room" entity="ent2">
+      <OKLink id="sv1#cru4#oln17" name="OKFlow17" to="sv1#page1#page13#dau13" automaticCoupling="true"/>
+      <KOLink id="sv1#cru4#kln14" name="KOFlow14" to="sv1#page1#page17#enu24" automaticCoupling="true" gr:bendpoints="122,-164,26,247"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="705" gr:y="1685" id="sv1#dlu5" name="Delete Hotel" entity="ent1">
+      <Selector id="sv1#dlu5#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu5#su26#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu5#oln18" name="OKFlow18" to="sv1#page1#page13#mdu6" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit gr:x="1440" gr:y="1670" id="sv1#mfu4" name="Approve Hotel">
+      <Selector id="sv1#mfu4#su28" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu4#su28#kcond28" name="KeyCondition28" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#mfu4#oln19" name="OKFlow19" to="sv1#page1#page2#mdu1" automaticCoupling="true" gr:bendpoints="105,-286,-75,284"/>
+    </ModifyUnit>
+    <ModifyUnit id="sv1#mfu6" name="Approve Hotel Manager" gr:x="1695" gr:y="1635">
+      <Selector id="sv1#mfu6#su30" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu6#su30#kcond30" name="KeyCondition28" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#mfu6#oln20" name="OKFlow20" to="sv1#page1#page2#dau4" automaticCoupling="true" gr:bendpoints="227,-345,-203,360"/>
+    </ModifyUnit>
+    <DeleteUnit id="sv1#dlu8" name="Delete Guest" gr:x="2560" gr:y="1535">
+      <Selector id="sv1#dlu8#su34" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu8#su34#kcond34" name="KeyCondition32" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu8#oln21" name="OKFlow21" to="sv1#page1#page2#dau15" automaticCoupling="true" gr:bendpoints="45,-322,108,352"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv1#dlu6" name="Disapprove Booking" gr:x="3680" gr:y="1485" entity="ent3">
+      <Selector id="sv1#dlu6#su6" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu6#su6#kcond6" name="KeyCondition20" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModifyUnit id="sv1#mfu5" name="Approve Booking" gr:x="3525" gr:y="1485" entity="ent3">
+      <Selector id="sv1#mfu5#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu5#su7#kcond7" name="KeyCondition17" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</SiteView>

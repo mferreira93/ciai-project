@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <title th:text="${hotel.hotelType} + ' ' + ${hotel.name}"></title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.js"></script>
+		<link href="../css/style.css" rel="stylesheet" />
+		<script src="../js/deleteButtons.js"></script>
+	</head>
+	<body>
+		<div th:include="fragments/header :: manager"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<h1> <span th:text="${hotel.hotelType}"></span> <span th:text="${hotel.name}"></span></h1>
+				<h3 th:text="${hotel.address}"></h3>
+				<div class="star-rating" th:attr="data-score=${hotel.numStars}"></div>
+				<div>
+					<h2>Rooms</h2>
+					<br/>
+				    <div id="notice" class="text-center bg-success"></div>
+				    <br/>
+					<table class="table">
+			            <tr th:each="room : ${rooms}">
+			                <td th:text="${room.roomType}">Name</td>
+			                <td>each <span th:text="${room.price}">Price</span> €</td>
+			            	<td>
+			            		<a sec:authorize="${#authorization.expression(T(hotel.security.AllowedForDeleteRoom).Condition)}" class="btn btn-sm btn-danger deleteRoom" type="submit" th:attr="data-id=${hotel.id}, data-url=${room.idRoom}">
+									<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+								</a>
+			            	</td>
+			            </tr>
+			        </table>
+		        	<a sec:authorize="${#authorization.expression(T(hotel.security.AllowedForRoomCreation).Condition)}" class="btn btn-sm btn-default pull-right" th:href="@{|/hotels/${hotel.id}/room|}">
+		        		<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Room
+		        	</a>
+		        </div>
+		        <br />
+				<h3>Comments</h3>
+				<div class="table-responsive">     
+					<table class="table" th:each="comment : ${comments}">
+					    <tr>
+					    	<td><b th:text="${comment.description}"></b> by <span th:text="${comment.user.name}">User</span></td>
+					    </tr>
+					</table>
+			        <table class="table" th:each="comment : ${commentsNotApproved}">
+					    <tr>
+					    	<td style="opacity: 0.5;"><b th:text="${comment.description}"></b> by <span th:text="${comment.user.name}">User</span></td>
+					    	<td>
+					    		<a class="btn btn-sm btn-primary" href="/comments"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Got to Approve Page</a>
+					    	</td>
+					    </tr>
+					</table>
+					</div>
+				<div>
+					<a class="btn btn-sm btn-default" href="/hotels">Back</a>
+					<a sec:authorize="${#authorization.expression(T(hotel.security.AllowedForEditHotel).Condition2)}" class="btn btn-sm btn-primary" th:href="@{|/hotels/${hotel.id}/edit|}">Edit</a>
+					<form sec:authorize="${#authorization.expression(T(hotel.security.AllowedForDeleteHotel).Condition)}" th:method="'delete'" th:action="@{#}" action="#">
+	                	<p class="submit"><input class="btn btn-sm btn-danger pull-right" type="submit" value="Delete" /></p>
+	            	</form>
+				</div>
+			</div>
+		</div>		
+		<div th:include="fragments/footer :: manager"></div>
+		<script src="../js/app.js"></script>
+	</body>
+</html>

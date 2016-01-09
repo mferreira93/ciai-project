@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>List of Hotels</title>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<link href="../css/style.css" rel="stylesheet" />
+  </head>
+<body>
+	<div th:include="fragments/header :: guest"></div>
+    <div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Bookings List</h1>
+			<div class="row">
+				<div class="col-md-8">
+				<form th:action="@{/guests/search_available_hotels/hotels_available}" method="get">			
+	                <p>Arrival: <input class="form-control" type="date" name="begin"/></p>    	    
+	                <p>Departure: <input class="form-control" type="date" name="end"/></p>    	    
+		    	    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+			    </form>
+				</div>
+			</div>
+    	</div>
+    </div>
+    <div th:include="fragments/footer :: guest"></div>
+</body>
+</html>
+

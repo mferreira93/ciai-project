@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Header Template file</title>
+	</head>
+	<body>
+		<div th:fragment="homepage">
+			<div class="navbar navbar-default navbar-static-top">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand"><span>Hotel Manager App</span><br/><br/></a>
+	                </div>
+	                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+	                    <ul class="nav navbar-nav navbar-right">
+	                        <li class="active"><a href="/">Home</a></li>
+	                        <li><a href="/list_hotels">Hotels</a></li>
+							<li><a href="/list_hostels">Hostels</a></li>
+	                        <li th:if="${#httpServletRequest.remoteUser} == null"><a href="/login"><i class="fa fa-sign-in"></i> Login</a></li>
+	                        <li th:if="${#httpServletRequest.remoteUser} == null"><a href="/sign_up_guest"><i class="fa fa-pencil-square-o"></i> Sign up</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+		
+		<div th:fragment="admin">
+			<div class="navbar navbar-default navbar-static-top">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand"><span>Hotel Manager App</span><br/><br/></a>
+	                </div>
+	                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+	                    <ul class="nav navbar-nav navbar-left">
+	                        <li><a href="/users"> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard</a></li>
+							<li><a href="/users/managers">Hotel Managers</a></li>
+							<li><a href="/users/moderators">Comment Moderators</a></li>
+							<li><a href="/users/guests">Guests</a></li>
+	                    </ul>
+	                    <ul class="nav navbar-nav navbar-right">
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<a href="#"> <label>Hello&nbsp;</label><span th:text="${#httpServletRequest.remoteUser}"></span>!</a>
+							</li>
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<form th:action="@{/logout}" method="post">
+									<span class="glyphicon glyphicon-log-out white" aria-hidden="true"></span>
+									<input class="logoutButton white" type="submit" value="Logout" />
+								</form>
+							</li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+		
+		<div th:fragment="moderator">
+			<div class="navbar navbar-default navbar-static-top">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand"><span>Hotel Manager App</span><br/><br/></a>
+	                </div>
+	                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+	                    <ul class="nav navbar-nav navbar-left">
+	                        <li><a href="/comments">Comments Not Approved</a></li>
+							<li><a href="/comments/hotels">List of Hotels</a></li>
+	                    </ul>
+	                    <ul class="nav navbar-nav navbar-right">
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<a href="#"> <label>Hello&nbsp;</label><span th:text="${#httpServletRequest.remoteUser}"></span>!</a>
+							</li>
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<form th:action="@{/logout}" method="post">
+									<span class="glyphicon glyphicon-log-out white" aria-hidden="true"></span>
+									<input class="logoutButton white" type="submit" value="Logout" />
+								</form>
+							</li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+		
+		<div th:fragment="guest">
+			<div class="navbar navbar-default navbar-static-top">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand"><span>Hotel Manager App</span><br/><br/></a>
+	                </div>
+	                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+	                    <ul class="nav navbar-nav navbar-left">
+	                        <li><a href="/guests">List Bookings</a></li>
+							<li><a href="/guests/hotels">List Hotels</a></li>
+	                    </ul>
+	                    <ul class="nav navbar-nav navbar-right">
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<a href="#"> <label>Hello&nbsp;</label><span th:text="${#httpServletRequest.remoteUser}"></span>!</a>
+							</li>
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<form th:action="@{/logout}" method="post">
+									<span class="glyphicon glyphicon-log-out white" aria-hidden="true"></span>
+									<input class="logoutButton white" type="submit" value="Logout" />
+								</form>
+							</li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+		
+		<div th:fragment="manager">
+			<div class="navbar navbar-default navbar-static-top">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand"><span>Hotel Manager App</span><br/><br/></a>
+	                </div>
+	                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+	                    <ul class="nav navbar-nav navbar-left">
+	                        <li><a href="/hotels">Hotels</a></li>
+							<li><a href="/hotels/comments">Comments</a></li>
+							<li><a href="/hotels/bookings">Bookings</a></li>
+							<li><a href="/hotels/bookings_wait_list">Bookings Wait List</a></li>							
+	                    </ul>
+	                    <ul class="nav navbar-nav navbar-right">
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<a href="#"> <label>Hello&nbsp;</label><span th:text="${#httpServletRequest.remoteUser}"></span>!</a>
+							</li>
+							<li th:if="${#httpServletRequest.remoteUser} != null">
+								<form th:action="@{/logout}" method="post">
+									<span class="glyphicon glyphicon-log-out white" aria-hidden="true"></span>
+									<input class="logoutButton white" type="submit" value="Logout" />
+								</form>
+							</li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+	</body>
+</html>

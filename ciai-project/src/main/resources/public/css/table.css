@@ -1,0 +1,15 @@
+.table, td {
+	border: hidden;
+}
+
+.border {
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 2px solid #000000;
+	min-height: 250px;
+}
+
+#margin {
+	margin-bottom: 10px;
+}

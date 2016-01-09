@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Guest</title>
+		<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="../js/deleteButtons.js"></script>
+		<link href="../css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div th:include="fragments/header :: admin"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<h2>Guests</h2>
+				<br />
+				<div id="notice" class="text-center bg-success"></div>
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+			        	<tr>
+			                <th>Name</th>
+			                <th>Username</th>
+			                <th>Email</th>
+			                <th></th>
+			            </tr>
+			            <tr th:each="guest : ${user}">
+			                <td th:text="${guest.name}">Name</td>
+			                <td th:text="${guest.username}">Username</td>
+			                <td th:text="${guest.email}">Email</td>
+			                <td>
+						    	<a class="btn btn-sm btn-danger deleteGuest" type="submit" th:attr="data-url=${guest.idUser}">
+						    		<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+						    	</a>
+			               </td>
+			            </tr>
+			        </table>
+				</div>
+			</div>
+		</div>
+		<div th:include="fragments/footer :: admin"></div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<div ng-controller="roomList">
+	<h2>Bookings Available For:</h2>
+	
+		<label>Hotel Name:</label><p >{{hotel}}</p>
+         <label>Check-In Date:</label><p >{{initial}}</p>
+		 <label>Check-Out Date:</label><p>{{end}}</p>
+		<table class="table table-hover">
+  				<tr>
+	  				<th >Rooms Still Available</th>
+	  				<th >Price</th>
+	  				<th>Room Type</th>
+	  				<th></th>
+  				</tr>		
+  				<tr ng-repeat="x in rooms">
+	    			<td >{{x.idRoom}}</td>
+	    			<td >{{x.price}}</td>
+	    			<td >{{x.roomType}}</td>
+	    			<td > <a  ng-click='doBookingForThisRoom(x.idRoom)'>Reserve Room</a>  </td>
+    			</tr>
+		</table>
+   </div>

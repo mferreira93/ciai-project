@@ -1,0 +1,16 @@
+<div>
+	<h2>Search an Hotel for a Room!</h2>
+	<form role="form" class="form" name="form" ng-submit="search()">
+		<label>Hotel Name:</label>
+		<select ng-controller="HotelList" name="repeatSelect" id="repeatSelect" class="col-sm-6 form-control hotelSelected">
+            <option id="hotelOption" ng-repeat="hotel in availableOptions" value="{{hotel.id}}">{{hotel.name}}</option>
+         </select>
+		
+		  <p><label>Check-In Date:</label><input ng-model="initial" type="date" name="initial"/></p>
+		  <p><label>Check-Out Date:</label><input ng-model="end" type="date" name="end"/></p>
+		  
+		  <button type="submit" class="btn" ng-disabled="form.$invalid">Search</button>
+		
+    </form> 
+
+   </div>

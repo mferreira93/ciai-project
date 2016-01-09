@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>Handling Form Submission</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Room Form</h1>
+			<div th:fragment="roomform(url)">
+				<form action="#" th:action="${url}" th:object="${room}" method="post">
+					<p>
+						<input type="hidden" th:field="*{idRoom}" /> Room Type:
+						<select name="roomType" class="form-control">
+		                	<option th:each="t : ${roomTypes}" th:text="${t}" th:value="${t}" ></option>
+		                </select> 
+					</p>				
+	                <p>Number Of Rooms: <input class="form-control" type="number" name="n_rooms"/></p>    	    
+		    	    <p>Price Per Room: <input class="form-control" type="number" step="0.01" name="price"/></p>
+		    	    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+			    </form>
+			</div>
+		</div>	
+	</body>
+</html>

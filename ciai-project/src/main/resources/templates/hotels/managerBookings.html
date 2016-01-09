@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>List of Hotels</title>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<link href="../css/style.css" rel="stylesheet" />
+  </head>
+<body>
+	<div th:include="fragments/header :: manager"></div>
+    <div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Bookings List</h1>
+			<div class="row">
+				<div class="col-md-8">
+				<a href="/guests/search_available_hotels">Search for available hotels</a>
+					 <ul th:each="booking : ${bookings}">
+				  	   	<li>Hotel: <a th:text="${booking.hotel.name}"></a></li>
+				  	   	<li>Room: <a th:text="${booking.room.roomType}"></a></li>
+				  	    <li>Arrival: <a th:text="${booking.start}"></a></li>
+				  	    <li>Departure: <a th:text="${booking.end}"></a></li>
+				  	    <li><a th:href="@{|/users/managers/${booking.id}/edit|}">Edit Booking</a></li>		  	    
+					</ul>
+				</div>
+			</div>
+    	</div>
+    </div>
+    <div th:include="fragments/footer :: manager"></div>
+</body>
+</html>
+

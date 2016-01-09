@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Comment Moderator Info</title>
+		<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+  		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="../css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div th:include="fragments/header :: admin"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>Comment Moderator Info: <span th:text="${user.name}"></span></h1>
+				<br />
+				<h3><b>Username:</b> <span th:text="${user.username}"></span></h3>
+				<h5><b>E-mail:</b> <span th:text="${user.email}"></span></h5>
+				<p><b>Password:</b>  <span th:text="${user.password}"></span></p>
+				<br />
+				<div class="pull-right">
+					<a class="btn btn-sm btn-default" href="/users/moderators">
+						<span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>	Back
+					</a>
+				</div>
+			</div>
+		</div>
+		<div th:include="fragments/footer :: admin"></div>
+	</body>
+</html>

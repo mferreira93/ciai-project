@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title th:text="${hotel.hotelType} + ' ' + ${hotel.name}"></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.js"></script>
+		<link href="../../../../css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div th:include="fragments/header :: admin"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<div th:if="${hotel.edited} == true">
+					<h1><i>Original Version:</i></h1>
+					<h1 th:text="${original.hotelType} + ' ' + ${original.name}"></h1>
+					<h3 th:text="${original.address}"></h3>
+					<p th:text="${original.hotelType}"></p>
+					<div class="star-rating" th:attr="data-score=${original.numStars}"></div>
+					<br/>	
+					<h1><i>Edited Version:</i></h1>
+				</div>
+				<h1 th:text="${hotel.hotelType} + ' ' + ${hotel.name}"></h1>
+				<h3 th:text="${hotel.address}"></h3>
+				<p th:text="${hotel.hotelType}"></p>
+				<div class="star-rating" th:attr="data-score=${hotel.numStars}"></div>
+				<br />
+				<div th:if="${hotel.approved} == true">
+					<form th:method="'delete'" th:action="@{#}" action="#">
+	                	<p class="submit"><input class="btn btn-sm btn-danger pull-right" type="submit" value="Delete" /></p>
+	            	</form>
+	            	<a class="btn btn-sm btn-default" th:href="@{|/users/managers/${hotel.manager.idUser}/hotels|}"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>Back</a>
+				</div>
+				<div class="pull-right" th:if="${hotel.approved} == false">
+					<a class="btn btn-sm btn-default" href="/users"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back</a>
+				</div>
+			</div>
+		</div>
+		<div th:include="fragments/footer :: admin"></div>
+		<script src="../../../../../../js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>All Comments and Hotels</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	  	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="../../css/style.css" rel="stylesheet" />
+		<script src="../js/table.js"></script>
+	</head>
+	<body>
+		<div th:include="fragments/header :: manager"></div>
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="table-responsive">     
+			        <table class="table" th:each="comment : ${comments}">
+					    <tr class="header">
+					        <td colspan="3" th:text="${comment.hotel.name}">Hotel <span  aria-hidden="true"></span></td>
+					    </tr>
+					    <tr>
+					    	<td><b th:text="${comment.description}"></b> by <span th:text="${comment.user.name}">User</span></td>
+			                <td sec:authorize="${#authorization.expression(T(hotel.security.AllowedForCommentCreation).Condition)}">
+			                	<a class="btn btn-sm btn-info" th:href="@{|/hotels/comments/${comment.id}/answer|}">Answer</a>
+			                </td>
+					    </tr>
+					</table>
+			    </div>
+			</div>
+		</div>
+		<div th:include="fragments/footer :: manager"></div>
+	</body>
+</html>
